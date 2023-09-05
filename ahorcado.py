@@ -6,6 +6,7 @@ def jugar():
     
      
     palabra_secreta = 'mandarina'
+    letras_acertadas=['_','_','_','_','_','_','_','_','_']
     
     ahorcado = False
     acerto = False
@@ -17,10 +18,10 @@ def jugar():
         indice = 0
         for letra in palabra_secreta:
             if(entrada == letra):
-                print('se encontro la letra {} en la posicion {}'.format(letra, indice))
+                letras_acertadas[indice]=letra
             
             indice = indice +1
-        print('jugando...')
+        print(letras_acertadas)
 
     print("Fin del Juego")
     
